@@ -1,0 +1,12 @@
+server:
+  port: 56010
+spring:
+  application:
+    name: server1
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: c30025bf-6a69-4e48-bec4-2c754439b0df
+        group: STUDY_GROUP
