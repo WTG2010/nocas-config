@@ -10,6 +10,20 @@ spring:
         file-extension: yaml
         namespace: c30025bf-6a69-4e48-bec4-2c754439b0df
         group: STUDY_GROUP
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/wtgshop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: 127.0.0.1
+    virtual-host: /
+    port: 5673
+    username: guest
+    password: guest
 nacos:
   discovery:
     server-addr: 127.0.0.1:8848
