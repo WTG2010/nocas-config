@@ -10,3 +10,7 @@ spring:
         file-extension: yaml
         namespace: c30025bf-6a69-4e48-bec4-2c754439b0df
         group: STUDY_GROUP
+nacos:
+  discovery:
+    server-addr: 127.0.0.1:8848
+    namespace: c30025bf-6a69-4e48-bec4-2c754439b0df
