@@ -10,10 +10,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BuyQueueCfg {
 	
-	{
-		System.out.println("配置消息队列");
-	}
-	
 	private static final String BUYEQUEUE_NAME = "BuyQueue";
 	
 	private static final String BUYEQUEUE_EXC_NAME = "BuyExc";
