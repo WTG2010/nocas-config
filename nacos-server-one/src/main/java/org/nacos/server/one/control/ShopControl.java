@@ -14,9 +14,9 @@ public class ShopControl {
 	@Autowired
 	private ProductServer productServer;  
 	
-	@GetMapping("/product/{id}")
-	private void BuyOne(@PathVariable("id") String id) {
-		productServer.buyOne(id);
+	@GetMapping("/product/{userId}/{productId}")
+	private void BuyOne(@PathVariable("userId") String userId,@PathVariable("productId") String productId) {
+		productServer.buyOne(userId,productId);
 	}
 
 }

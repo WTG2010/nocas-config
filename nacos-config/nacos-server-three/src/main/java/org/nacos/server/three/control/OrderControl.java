@@ -7,15 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(name="order")
+@RequestMapping("order")
 public class OrderControl {
-	
+
 	@Autowired
 	private OrderServer orderServer;
 
 	@PostMapping("creat")
-	public void creatOrder(String userid, String productid, String price) {
+	public String creatOrder(String userid, String productid, Integer price) {
 		orderServer.creatOrder(userid, productid, price);
+		return "success";
 	}
 	
 }

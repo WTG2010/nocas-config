@@ -14,8 +14,9 @@ public class UserControl {
 	private UserServer userServer;
 	
 	@PostMapping("reduce")
-	private void reduce(String id,int money) {
+	private String reduce(String id,int money) {
 		userServer.reduceMoney(id, money);
+		return "success";
 	}
 
 }

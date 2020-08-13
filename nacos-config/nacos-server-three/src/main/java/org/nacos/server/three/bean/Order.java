@@ -24,6 +24,6 @@ public class Order {
 	private String id;
 	private String userId;
 	private String productId;
-	private String orderPrice;
+	private Integer orderPrice;
 	
 }

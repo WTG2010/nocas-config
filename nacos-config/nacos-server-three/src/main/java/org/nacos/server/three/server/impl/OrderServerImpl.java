@@ -13,7 +13,7 @@ public class OrderServerImpl implements OrderServer{
 	private OrderDao orderDao;
 
 	@Override
-	public void creatOrder(String userid, String productid, String price) {
+	public void creatOrder(String userid, String productid, Integer price) {
 		Order order = new Order();
 		order.setOrderPrice(price);
 		order.setProductId(productid);
